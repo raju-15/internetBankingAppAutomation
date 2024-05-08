@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Internet Banking">
+	<listeners>
+		<listener class-name="com.internetBankingAppAutomation.utilities.Listener"></listener>
+	</listeners>
+	<test name="Banking Test">
+		<parameter name="browser" value="gecko" />
+		<classes>
+			<class name="com.internetBankingAppAutomation.testCases.TC_LoginPage_001" />
+			<!-- <class name="com.internetBankingAppAutomation.testCases.TC_LoginDDT" />-->
+			<!-- <class name="com.internetBankingAppAutomation.testCases.TC_NewCutomer_002" /> -->
+		</classes>
+	</test>
+</suite>
